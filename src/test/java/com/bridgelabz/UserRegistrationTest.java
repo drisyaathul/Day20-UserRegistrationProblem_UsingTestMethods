@@ -9,8 +9,8 @@ public class UserRegistrationTest {
 
     @Test
     void givenFirstNameHappyTest() {
-        boolean actualValue = userRegistration.validateFirstName("Drisya");
-        Assertions.assertTrue(actualValue);
+        boolean actualFirstName = userRegistration.validateFirstName("Drisya");
+        Assertions.assertTrue(actualFirstName);
         System.out.println("FirstName Successfully Validate.");
     }
 
@@ -23,8 +23,8 @@ public class UserRegistrationTest {
 
     @Test
     void givenLastNameHappyTest() {
-        boolean actualFirstName = userRegistration.validateLastName("Athul");
-        Assertions.assertTrue(actualFirstName);
+        boolean actualLastName = userRegistration.validateLastName("Athul");
+        Assertions.assertTrue(actualLastName);
         System.out.println("LastName Successfully Validate.");
     }
 
@@ -58,15 +58,15 @@ public class UserRegistrationTest {
 
     @Test
     void givenMobileNumberSadTest() {
-        boolean actualEmail = userRegistration.validateMobileNumber("+919486584620");
-        Assertions.assertFalse(actualEmail);
+        boolean actualMobileNumber = userRegistration.validateMobileNumber("+919486584620");
+        Assertions.assertFalse(actualMobileNumber);
         System.out.println("Mobile Number Invalid.");
     }
 
     @Test
     void givenPasswordHappyTest() {
-        boolean actualMobileNumber = userRegistration.validatePassword("myPass_Word@123");
-        Assertions.assertTrue(actualMobileNumber);
+        boolean actualPassword = userRegistration.validatePassword("myPass_Word@123");
+        Assertions.assertTrue(actualPassword);
         System.out.println("Password Successfully Validate.");
     }
 
@@ -77,3 +77,4 @@ public class UserRegistrationTest {
         System.out.println("Password Invalid.");
     }
 }
+
