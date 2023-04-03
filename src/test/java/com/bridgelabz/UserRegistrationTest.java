@@ -23,8 +23,8 @@ public class UserRegistrationTest {
 
     @Test
     void givenLastNameHappyTest() {
-        boolean actualFirstName = userRegistration.validateLastName("Athul");
-        Assertions.assertTrue(actualFirstName);
+        boolean actualLastName = userRegistration.validateLastName("Athul");
+        Assertions.assertTrue(actualLastName);
         System.out.println("LastName Successfully Validate.");
     }
 
